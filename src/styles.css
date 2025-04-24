@@ -1,3 +1,13 @@
-body {
-  display: block;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sfprodisplay
+  }
+
+  *, *::before, *::after {
+    @apply text-dark-500;
+  }
 }
